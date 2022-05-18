@@ -31,3 +31,41 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
 - [ ] More options ?
 - [ ] Complex rules ?
 - [ ] Responsive Design
+
+## Roadmap ##
+#### Create a basic website to house the game ####
+- [x] Use the mobile first approach
+- [x] Have a container for the player's choice
+    - [x] Have a container for the locked choice
+    - [x] Have a container for the choices buttons
+- [x] Have a container to display the computer's choice
+- [x] Have a sketch for the start of the site
+
+![site starting sketch](/assets/read-me-images/BaseGameSketch.webp)
+- [ ] Recreate design in HTML
+- [ ] Add some basic styling
+- [ ] Add DOM elements for the choices, scoreboard, computer's score.
+- [ ] Create a player class
+    - [ ] A player has a moveset defined by an array of possible moves
+- [ ] Create a computer class
+    - [ ] The computer has the logic to play RPS
+    - [ ] The computer's logic is modular to the difficulty level
+    - [ ] The computer has a random name generated out of an array of funny names
+- [ ] Add a 'duel arena' class
+    - [ ] Here the duel between the player and the AI will be fight out
+    - [ ] The arena will take all the player's choices and output the resulting winner
+    
+
+
+
+## Personal Optional Goals ##
+- [ ] Add best out of 3 with a scoreboard
+- [ ] Enable a difficulty level
+- [ ] Give the AI a random name
+    *You are playing against Ze Master Bleeper*
+- [ ] Add a multiplayer option
+    - [ ] Multiple players can be created and the players will select their options once by one by receiving the device and pick ready
+    - [ ] Allow computers to be added to the multiplayer game
+    - [ ] The players can set their names in a pool
+    - [ ] The players will play against each other in a group
+    - [ ] The winning players continue until one RPS Master remains 'The Sheldonator'
