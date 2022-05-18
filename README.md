@@ -42,8 +42,8 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
 - [x] Have a sketch for the start of the site
 
 ![site starting sketch](/assets/read-me-images/BaseGameSketch.webp)
-- [ ] Recreate design in HTML
-- [ ] Add some basic styling
+- [X] Recreate design in HTML
+- [X] Add some basic styling
 - [ ] Add DOM elements for the choices, scoreboard, computer's score.
 - [ ] Create a player class
     - [ ] A player has a moveset defined by an array of possible moves
@@ -54,7 +54,7 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
 - [ ] Add a 'duel arena' class
     - [ ] Here the duel between the player and the AI will be fight out
     - [ ] The arena will take all the player's choices and output the resulting winner
-    
+
 
 
 
