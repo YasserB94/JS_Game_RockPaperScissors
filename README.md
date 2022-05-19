@@ -48,19 +48,20 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
 - [X] Add some basic styling
 - [X] Add DOM elements for the choices, scoreboard, computer's score.
 ![site base html/css](./assets/read-me-images/BaseGameDesign.png)
-- [ ] Create a player class
-    - [ ] A player has a moveset defined by an array of possible moves
-- [ ] Create a computer class
-    - [ ] The computer has the logic to play RPS
-    - [ ] The computer's logic is modular to the difficulty level
-    - [ ] The computer has a random name generated out of an array of funny names
-- [ ] Add a 'duel arena' class
-    - [ ] Here the duel between the player and the AI will be fight out
-    - [ ] The arena will take all the player's choices and output the resulting winner
-
-
-
-
+- [X] Create a player class
+    - [X] Setter for playermove
+    - [X] Getter for player move
+- [X] Create a computer class
+    - [X] Setter/getter for difficulty
+    - [X] Setter/getter for chosen move
+- [X] Add a 'duel arena' class
+    - [X] check player move, compare it to computer move
+- [ ] Create the controller
+    - [x] Initialise the players
+    - [x] Initialise the computers
+    - [ ] Initialise the arena
+    - [ ] Link dom elements in the controller
+    - [ ] Update dom with new info
 ## Personal Optional Goals ##
 - [ ] Add best out of 3 with a scoreboard
 - [ ] Enable a difficulty level
