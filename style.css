@@ -1,19 +1,21 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{
-    /*--Theme--*/
-    --clr-black:#2D3142;
-    --clr-white:#F5E9E2;
-    --clr-secondary:#A20021;
-    --clr-primary:#60A561;
-    --clr-highlight:#4392F1;
 
-    --padd-global:1rem;
+:root {
+    /*--Theme--*/
+    --clr-black: #2D3142;
+    --clr-white: #F5E9E2;
+    --clr-secondary: #A20021;
+    --clr-primary: #60A561;
+    --clr-highlight: #4392F1;
+
+    --padd-global: 1rem;
 }
-body{
+
+body {
     background-color: var(--clr-white);
     color: var(--clr-black);
     overflow: hidden;
@@ -24,24 +26,30 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    text-align: center;
 }
-header,footer{
+
+header,
+footer {
     padding: var(--padd-global);
     text-align: center;
     background-color: var(--clr-secondary);
     color: var(--clr-primary);
 }
-header{
+
+header {
     position: sticky;
     top: 0;
 }
-main{
-    margin: var(--padd-global);
+
+main {
     padding: var(--padd-global);
     height: 100%;
     width: 100%;
 }
-#game{
+
+#game {
+
     border: solid .1rem;
     border-color: var(--clr-black);
     border-radius: 5px;
@@ -51,19 +59,69 @@ main{
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--clr-black);
+    padding: var(--padd-global);
+    border-radius: var(--padd-global);
 }
-#game .game-panel{
+
+#game .game-panel {
     text-align: center;
     background-color: var(--clr-secondary);
     color: var(--clr-white);
-    min-height: 30%;
+    max-height: 35%;
+    height: 30%;
     padding: var(--padd-global);
     border-radius: 1rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
-footer{
+#game #game-score-board{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#game #game-arena{
+    display: flex;
+    justify-content: space-between;
+}
+.arena-section{ 
+    max-width: 30%;
+    padding: var(--padd-global);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arena-section button{
+    margin-top: 50%;
+    border: none;
+    padding: .5rem 1rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    border-radius: .5rem;
+}
+.arena-section button:hover{
+color: var(--clr-secondary);
+background-color: var(--clr-highlight);
+}
+.arena-section img{ 
+    max-width: 100%;
+}
+
+.player-move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+
+}
+
+.player-move img {
+    max-width: 100%;
+
+}
+
+footer {
     margin-top: auto;
     position: sticky;
     bottom: 0;

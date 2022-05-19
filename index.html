@@ -18,13 +18,44 @@
         <section id="game">
             <div id="game-score-board" class="game-panel">
                 <h2>Score</h2>
-                <p>0|0</p>
+                <p>0 | 0</p>
             </div>
             <div id="game-arena" class="game-panel">
-                <p>Fight!</p>
+                <div class="arena-section">
+                    <p>Your move</p>
+                    <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="player's selected move"
+                        id="arena-player">
+                </div>
+                <div class="arena-section">
+                    <button id="arena-duel">Duel!</button>
+                </div>
+                <div class="arena-section">
+                    <p>Opponent's move</p>
+                    <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="computer's selected move"
+                        id="arena-ai">
+                </div>
             </div>
             <div id="player-move-selector" class="game-panel">
-                <p>Select Your move</p>
+                <div id="player-move-rock" class="player-move">
+                    <p>Rock</p>
+                    <img src="./assets/rock-paper-scissors/moves/rock.webp" alt="Handsign for a rock">
+                </div>
+                <div id="player-move-paper" class="player-move">
+                    <p>Paper</p>
+                    <img src="./assets/rock-paper-scissors/moves/paper.webp" alt="Handsign for paper">
+                </div>
+                <div id="player-move-scissors" class="player-move">
+                    <p>Scissors</p>
+                    <img src="./assets/rock-paper-scissors/moves/scissors.webp" alt="Handsign for scissors">
+                </div>
+                <div id="player-move-lizard" class="player-move">
+                    <p>Lizard</p>
+                    <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="Handsign for a lizard">
+                </div>
+                <div id="player-move-spock" class="player-move">
+                    <p>Spock</p>
+                    <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="Handsign for Spock">
+                </div>
             </div>
         </section>
     </main>

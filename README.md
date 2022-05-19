@@ -1,5 +1,7 @@
 ## Rock Paper Scissors Lizard Spock ##
 A learning challenge project for the BeCode full stack web developper course.
+[Check out the website here!](https://yasserb94.github.io/JS_Game_RockPaperScissors/)
+
 ### Objective ###
 Make a JavaScript game of rock paper scissors including the big bang theory's rules of lizard spock
 ```
@@ -41,10 +43,11 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
 - [x] Have a container to display the computer's choice
 - [x] Have a sketch for the start of the site
 
-![site starting sketch](/assets/read-me-images/BaseGameSketch.webp)
+![site starting sketch](./assets/read-me-images/BaseGameSketch.webp)
 - [X] Recreate design in HTML
 - [X] Add some basic styling
-- [ ] Add DOM elements for the choices, scoreboard, computer's score.
+- [X] Add DOM elements for the choices, scoreboard, computer's score.
+![site base html/css](./assets/read-me-images/BaseGameDesign.png)
 - [ ] Create a player class
     - [ ] A player has a moveset defined by an array of possible moves
 - [ ] Create a computer class
