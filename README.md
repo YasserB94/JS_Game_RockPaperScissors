@@ -44,11 +44,13 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
 - [x] Have a sketch for the start of the site
 
 ![site starting sketch](./assets/read-me-images/BaseGameSketch.webp)
+
 - [X] Recreate design in HTML
 - [X] Add some basic styling
 - [X] Add DOM elements for the choices, scoreboard, computer's score.
 
 ![site base html/css](./assets/read-me-images/BaseGameDesign.png)
+
 - [X] Create a player class
     - [X] Setter for playermove
     - [X] Getter for player move
@@ -67,17 +69,20 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
     - [ ] An intro game where people can choose between single and multiplayer
 
 ![Game main menu](./assets/read-me-images/HomePage.webp)
+
         - [ ] Single Player
 
 ![Game Single Player](./assets/read-me-images/SinglePlayerGameDesign.webp)
+
             - [ ] The player specifies their name
             - [ ] Chooses the amount of bots he would like to add to the game
             - [ ] Button to start the game 
             - [ ] Player gets to lock in their choice
             - [ ] Press the duel button to calculate score
         - [ ] Multiplayer
-        
+
 ![Game Multiplayer](./assets/read-me-images/Multiplayer.webp)
+
             - [ ] The player gets to choose howmany players he is with
             - [ ] The player has the option to add extra bots
             - [ ] The player can pick wether he would like to specify player names
