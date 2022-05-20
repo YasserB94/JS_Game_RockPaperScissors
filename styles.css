@@ -101,7 +101,8 @@ main {
 }
 .score-board,
 .arena-container,
-.btn-arena-lockin{
+.btn-arena-lockin,
+.turn-indicator{
     background-color: var(--clr-white);
     font-family: var(--ff-UI);
     font-size: 2rem;
@@ -109,7 +110,8 @@ main {
 .score-board,
 .arena-container,
 .btn-arena-lockin,
-.player-move-selector{
+.player-move-selector,
+.turn-indicator{
     border-style: solid;
     border-color: var(--clr-borders);
     border-radius: 1rem;
@@ -165,6 +167,49 @@ main {
     align-items: center;
     justify-content: center;
     padding: 1rem;
+}
+.multi-player .score-board{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.multi-player .score-board ul{
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.multi-player .score-board ul li span{
+    color: var(--clr-primary);
+}
+.multi-player .arena-container{
+    align-items: center;
+}
+.multi-player .arena-container table{
+    padding: 0 1rem;
+    width: 100%;
+    text-align: left;
+}
+.multi-player .arena-container table thead{
+    font-size: 1.5rem;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+}
+.multi-player .arena-container table thead tr th:last-child{
+    text-align: center;
+}
+.multi-player .arena-container table tbody{
+    font-size: 1.5rem;
+}
+.multi-player .arena-container table tbody tr td:not(:first-child){
+    text-align: right;
+}
+.turn-indicator{
+    padding: 0.5rem 1rem;
+}
+.turn-indicator span{
+    color: var(--clr-primary);
 }
 /**GAME RULES**/
 .game-rules {
