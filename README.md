@@ -65,8 +65,10 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
     - [ ] Update dom with new info
 - [ ] Create a proper webpage to house the game
     - [ ] An intro game where people can choose between single and multiplayer
+
 ![Game main menu](./assets/read-me-images/HomePage.webp)
         - [ ] Single Player
+
 ![Game Single Player](./assets/read-me-images/SinglePlayerGameDesign.webp)
             - [ ] The player specifies their name
             - [ ] Chooses the amount of bots he would like to add to the game
@@ -74,6 +76,7 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
             - [ ] Player gets to lock in their choice
             - [ ] Press the duel button to calculate score
         - [ ] Multiplayer
+        
 ![Game Multiplayer](./assets/read-me-images/Multiplayer.webp)
             - [ ] The player gets to choose howmany players he is with
             - [ ] The player has the option to add extra bots
