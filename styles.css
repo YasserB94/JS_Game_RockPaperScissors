@@ -7,16 +7,17 @@
 
 :root {
     /*Colors*/
-    --clr-white:#FEFEFE;
-    --clr-black:#010101;
-    --clr-primary:#A63525;
-    --clr-borders:#908B8D;
+    --clr-white: #FEFEFE;
+    --clr-black: #010101;
+    --clr-primary: #A63525;
+    --clr-borders: #908B8D;
     /*FONTS*/
-    --ff-UI:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --ff-UI: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     /*SIZING-*/
     --border-width: 0.25rem;
 }
-body{
+
+body {
     background-color: var(--clr-white);
     color: var(--clr-black);
     max-height: 100vh;
@@ -29,19 +30,22 @@ body{
     justify-content: flex-start;
     flex-direction: column;
 }
-header{
+
+header {
     text-transform: uppercase;
     overflow: hidden;
     font-family: var(--ff-UI);
     text-align: center;
     padding-bottom: 1rem;
 }
-main{
+
+main {
     background-color: var(--clr-primary);
     width: 100vw;
     height: 100%;
 }
-.game-container{
+
+.game-container {
     height: 100%;
     width: 100%;
     display: flex;
@@ -51,13 +55,15 @@ main{
     border-color: var(--clr-borders);
     border-width: var(--border-width);
 }
+
 /**GAME MAIN MENU**/
-.main-menu{
+.main-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.main-menu button{
+
+.main-menu button {
     margin: 1rem;
     padding: .5rem 1.5rem;
     border-color: var(--clr-borders);
@@ -66,20 +72,68 @@ main{
     font-size: 2rem;
     text-transform: uppercase;
     background-color: var(--clr-white);
-    
+
 }
-.main-menu button:active{
+
+.main-menu button:active {
     background-color: var(--clr-primary);
-    color: var(--clr-white)!important;
+    color: var(--clr-white) !important;
 }
-.main-menu button:hover{
+
+.main-menu button:hover {
     cursor: pointer;
     color: var(--clr-primary);
 }
-footer{
-margin-top: auto;
-justify-content: center;
-font-family: var(--ff-UI);
-text-align: center;
-font-size: 1rem;
+
+/**GAME RULES**/
+.game-rules {
+    background-color: var(--clr-white);
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate3d(-50%, -50%, 0);
+    padding: 1rem;
+    font-size: 1rem;
+    opacity: .97;
+    border: solid;
+    border-radius: .5rem;
+    border-color: var(--clr-borders);
+    border-width: var(--border-width);
+    text-transform: uppercase;
+}
+.game-rules thead tr th,
+.game-rules tbody tr td:first-child  {
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: .5rem!important;
+
+    border-radius: .25rem;
+    background-color:#010101;
+    font-style: normal;
+}
+.game-rules thead tr th:not(:first-child){
+    border-bottom: solid;
+}
+.game-rules tbody tr td:first-child {
+    border-right: solid;
+}
+.game-rules tbody tr td{
+    text-align: center;
+    text-transform: lowercase;
+    font-style: italic;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    height: 10%;
+}
+
+
+
+
+footer {
+    margin-top: auto;
+    justify-content: center;
+    font-family: var(--ff-UI);
+    text-align: center;
+    font-size: 1rem;
 }

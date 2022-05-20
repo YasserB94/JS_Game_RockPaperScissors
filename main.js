@@ -10,7 +10,7 @@ function main(currentTime) {
     update();
     timeSinceLastRender = currentTime;
 }
-init();
+// init();
 function init() {
     controller = new Controller();
     window.requestAnimationFrame(main)
@@ -21,3 +21,13 @@ function update() {
     controller.draw();
 
 }
+
+
+
+///MAIN-MENU
+document.getElementById('btn-rules').addEventListener('click',()=>{
+    document.getElementById('game-rules').style.display = '';
+})
+document.getElementById('game-rules').addEventListener('click',()=>{
+    document.getElementById('game-rules').style.display = 'none';
+})
