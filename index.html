@@ -21,78 +21,80 @@
                 <button class="btn-main-menu" id="btn-multi-player">multiplayer</button>
                 <button class="btn-main-menu" id="btn-rules">rules</button>
             </div>
-        
-        <div class="single-player">
-            <div class="score-board">
-                <p>score</p>
-                <p>0 | 0</p>
-            </div>
-            <div class="arena-container">
-                <h2>Arena</h2>
-                <div class="chosen-move-panel">
-                    <div class="chosen-move-player">
-                        <h3>Player</h3>
-                        <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="The selected handsign by the player">
-                    </div>
-                    <div class="chosen-move-cpu">
-                        <h3>CPU</h3>
-                        <img src="./assets/rock-paper-scissors/moves/paper.webp" alt="The selected handsign by the computer">
+
+            <div class="single-player">
+                <div class="score-board">
+                    <p>score</p>
+                    <p>0 | 0</p>
+                </div>
+                <div class="arena-container">
+                    <p>Arena</p>
+                    <div class="chosen-move-panel">
+                        <div class="chosen-move-player">
+                            <p>Player</p>
+                            <img src="./assets/rock-paper-scissors/moves/lizard.webp"
+                                alt="The selected handsign by the player">
+                        </div>
+                        <div class="chosen-move-cpu">
+                            <p>CPU</p>
+                            <img src="./assets/rock-paper-scissors/moves/paper.webp"
+                                alt="The selected handsign by the computer">
+                        </div>
                     </div>
                     <div class="round-result">
-                        <h3>Round: 1</h3>
+                        <p>Round: 1</p>
                         <p>Winner: <span>CPU</span> </p>
                     </div>
                 </div>
+                <button class="btn-arena-lockin">Lock in Choice</button>
+                <div class="player-move-selector">
+                    <img src="./assets/rock-paper-scissors/moves/rock.webp" alt="handsign for rock">
+                    <img src="./assets/rock-paper-scissors/moves/paper.webp" alt="handsign for paper">
+                    <img src="./assets/rock-paper-scissors/moves/scissors.webp" alt="handsign for scissors">
+                    <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="handsign for lizard">
+                    <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="handsign for spock">
+                </div>
             </div>
-            <button class="btn-arena-lockin">Lock in Choice</button>
-            <div class="player-move-selector">
-                <img src="./assets/rock-paper-scissors/moves/rock.webp" alt="handsign for rock">
-                <img src="./assets/rock-paper-scissors/moves/paper.webp" alt="handsign for paper">
-                <img src="./assets/rock-paper-scissors/moves/scissors.webp" alt="handsign for scissors">
-                <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="handsign for lizard">
-                <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="handsign for spock">
+            <div class="multi-player"></div>
+            <div class="game-rules" id="game-rules">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Choice</th>
+                            <th>Wins from</th>
+                            <th>Loses to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rock</td>
+                            <td>Scissor Lizard</td>
+                            <td>Paper Spock</td>
+                        </tr>
+                        <tr>
+                            <td>Paper</td>
+                            <td>Rock Spock</td>
+                            <td>Scissors Lizard</td>
+                        </tr>
+                        <tr>
+                            <td>Scissor</td>
+                            <td>Paper Lizard</td>
+                            <td>Rock Spock</td>
+                        </tr>
+                        <tr>
+                            <td>Lizard</td>
+                            <td>Paper Spock</td>
+                            <td>Scissor Rock</td>
+                        </tr>
+                        <tr>
+                            <td>Spock</td>
+                            <td>Rock Scissor</td>
+                            <td>Paper Lizard</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div class="multi-player"></div>
-        <div class="game-rules" id="game-rules">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Choice</th>
-                        <th>Wins from</th>
-                        <th>Loses to</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Rock</td>
-                        <td>Scissor Lizard</td>
-                        <td>Paper Spock</td>
-                    </tr>
-                    <tr>
-                        <td>Paper</td>
-                        <td>Rock Spock</td>
-                        <td>Scissors Lizard</td>
-                    </tr>
-                    <tr>
-                        <td>Scissor</td>
-                        <td>Paper Lizard</td>
-                        <td>Rock Spock</td>
-                    </tr>
-                    <tr>
-                        <td>Lizard</td>
-                        <td>Paper Spock</td>
-                        <td>Scissor Rock</td>
-                    </tr>
-                    <tr>
-                        <td>Spock</td>
-                        <td>Rock Scissor</td>
-                        <td>Paper Lizard</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
     </main>
     <footer>
         <p>a BeCode Student's first try at Object Oriented Programming with JavaScript</p>

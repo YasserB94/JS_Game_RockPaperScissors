@@ -49,19 +49,20 @@ main {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-top: solid;
     border-bottom: solid;
     border-color: var(--clr-borders);
     border-width: var(--border-width);
+    padding: 1rem;
 }
 
 /**GAME MAIN MENU**/
 .main-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
-    display: none;
 }
 
 .main-menu button {
@@ -86,6 +87,74 @@ main {
     color: var(--clr-primary);
 }
 /**Single Player**/
+.single-player{
+
+
+    border-style: solid;
+    border-radius: .25rem;
+    border-color: var(--clr-borders);
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.single-player .score-board,
+.single-player .arena-container,
+.single-player .btn-arena-lockin{
+    background-color: var(--clr-white);
+    font-family: var(--ff-UI);
+    font-size: 2rem;
+}
+.single-player .score-board,
+.single-player .arena-container,
+.single-player .btn-arena-lockin,
+.single-player .player-move-selector{
+    border-style: solid;
+    border-color: var(--clr-borders);
+    border-radius: 1rem;
+    margin: .5rem;
+}
+.single-player .score-board{
+    text-align: center;
+    padding: 0.5rem 2rem;
+    width: 60%;
+}
+.single-player .arena-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction:column;
+    width: 100%;
+}
+.single-player .arena-container .chosen-move-panel{
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+}
+.single-player .arena-container .chosen-move-panel img{
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+.single-player .btn-arena-lockin{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.single-player .player-move-selector{
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-black);
+}
+.single-player .player-move-selector img{
+    width: calc(100%/6);
+}
+.single-player .player-move-selector img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 /**GAME RULES**/
 .game-rules {
