@@ -84,9 +84,11 @@ main {
     cursor: pointer;
     color: var(--clr-primary);
 }
+/**Single Player**/
 
 /**GAME RULES**/
 .game-rules {
+    display: none;
     background-color: var(--clr-white);
     position: absolute;
     top: 50vh;
@@ -126,10 +128,6 @@ main {
     color: var(--clr-white);
     height: 10%;
 }
-
-
-
-
 footer {
     margin-top: auto;
     justify-content: center;

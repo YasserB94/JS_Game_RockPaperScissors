@@ -26,7 +26,7 @@ function update() {
 
 ///MAIN-MENU
 document.getElementById('btn-rules').addEventListener('click',()=>{
-    document.getElementById('game-rules').style.display = '';
+    document.getElementById('game-rules').style.display = 'block';
 })
 document.getElementById('game-rules').addEventListener('click',()=>{
     document.getElementById('game-rules').style.display = 'none';
