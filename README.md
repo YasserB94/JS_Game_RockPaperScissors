@@ -70,32 +70,34 @@ These rules add a Lizard and a Spock to the game to decrease the odds of having 
 
 ![Game main menu](./assets/read-me-images/HomePage.webp)
 
-        - [ ] Single Player
+- [ ] Single Player
 
 ![Game Single Player](./assets/read-me-images/SinglePlayerGameDesign.webp)
 
-            - [ ] The player specifies their name
-            - [ ] Chooses the amount of bots he would like to add to the game
-            - [ ] Button to start the game 
-            - [ ] Player gets to lock in their choice
-            - [ ] Press the duel button to calculate score
-        - [ ] Multiplayer
+- [ ] The player specifies their name
+- [ ] Chooses the amount of bots he would like to add to the game
+- [ ] Button to start the game 
+- [ ] Player gets to lock in their choice
+- [ ] Press the duel button to calculate score
+    
+
+- [ ] Multiplayer
 
 ![Game Multiplayer](./assets/read-me-images/Multiplayer.webp)
 
-            - [ ] The player gets to choose howmany players he is with
-            - [ ] The player has the option to add extra bots
-            - [ ] The player can pick wether he would like to specify player names
-                - [ ] If So, ask names 1 by 1
-                - [ ] If not generic names, player1,2,3,... are generated
-            - [ ] Start game button
-            - [ ] players pick move 1 by 1, have an indicator of who's turn it is
-            - [ ] After the last player selected their will be a duel button
-            - [ ] Once its pressed scores get calculated
-                - [ ] For every player they win against they get 1 point
-                - [ ] For every player they lose against they lose 1 point
-            - [ ] Round score changes will be showed
-            - [ ] Eventual winner 1st place will be showed
+- [ ] The player gets to choose howmany players he is with
+- [ ] The player has the option to add extra bots
+- [ ] The player can pick wether he would like to specify player names
+    - [ ] If So, ask names 1 by 1
+    - [ ] If not generic names, player1,2,3,... are generated
+- [ ] Start game button
+- [ ] players pick move 1 by 1, have an indicator of who's turn it is
+- [ ] After the last player selected their will be a duel button
+- [ ] Once its pressed scores get calculated
+    - [ ] For every player they win against they get 1 point
+    - [ ] For every player they lose against they lose 1 point
+- [ ] Round score changes will be showed
+- [ ] Eventual winner 1st place will be showed
     - [ ] A rules button that overlays a table with the rules
     ## Personal Optional Goals ##
 - [ ] Add best out of 3 with a scoreboard
