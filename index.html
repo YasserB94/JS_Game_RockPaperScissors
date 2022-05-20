@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The big bang theory's version of rock paper scissors playable in your browser">
     <title>Rock Paper Scissors Lizard Spock</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -15,54 +15,18 @@
         <h1>Rock Paper Scissors Lizard Spock</h1>
     </header>
     <main>
-        <section id="game">
-            <div id="game-score-board" class="game-panel">
-                <h2>Score</h2>
-                <p>0 | 0</p>
+        <div class="game-container">
+            <div class="main-menu">
+                <button class="btn-main-menu" id="btn-single-player">single player</button>
+                <button class="btn-main-menu" id="btn-multi-player">multiplayer</button>
+                <button class="btn-main-menu" id="btn-rules">rules</button>
             </div>
-            <div id="game-arena" class="game-panel">
-                <div class="arena-section">
-                    <p>Your move</p>
-                    <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="player's selected move"
-                        id="arena-player">
-                </div>
-                <div class="arena-section">
-                    <button id="arena-duel">Duel!</button>
-                </div>
-                <div class="arena-section">
-                    <p>Opponent's move</p>
-                    <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="computer's selected move"
-                        id="arena-ai">
-                </div>
-            </div>
-            <div id="player-move-selector" class="game-panel">
-                <div id="player-move-rock" class="player-move">
-                    <p>Rock</p>
-                    <img src="./assets/rock-paper-scissors/moves/rock.webp" alt="Handsign for a rock">
-                </div>
-                <div id="player-move-paper" class="player-move">
-                    <p>Paper</p>
-                    <img src="./assets/rock-paper-scissors/moves/paper.webp" alt="Handsign for paper">
-                </div>
-                <div id="player-move-scissors" class="player-move">
-                    <p>Scissors</p>
-                    <img src="./assets/rock-paper-scissors/moves/scissors.webp" alt="Handsign for scissors">
-                </div>
-                <div id="player-move-lizard" class="player-move">
-                    <p>Lizard</p>
-                    <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="Handsign for a lizard">
-                </div>
-                <div id="player-move-spock" class="player-move">
-                    <p>Spock</p>
-                    <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="Handsign for Spock">
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
     <footer>
-        <p>Steal all you want - 2022</p>
+        <p>a BeCode Student's first try at Object Oriented Programming with JavaScript</p>
     </footer>
-    <script src="main.js" defer type="module"></script>
+    <!-- <script src="main.js" defer type="module"></script> -->
 </body>
 
 </html>
