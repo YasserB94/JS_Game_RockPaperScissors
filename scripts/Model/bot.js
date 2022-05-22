@@ -1,11 +1,10 @@
 export default class Bot {
     constructor(name='CPU',difficulty = 'normal') {
         this.name = name;
-        this.difficulty = difficulty;
-    }
-    init() {
-        this.moves = ['rock', 'paper', 'scissor', 'lizard', 'spock']
         this.score = 0;
+        this.difficulty = difficulty;
+        this.moves = ['rock', 'paper', 'scissor', 'lizard', 'spock']
+
     }
     getDifficulty() {
         return this.difficulty;
@@ -20,8 +19,34 @@ export default class Bot {
         return this.move;
     }
     setRandomMove() {
-        const randomIndex = Math.floor(Math.random() * this.moves.length-1)
-        setMove(this.moves[randomIndex])
+        const randomIndex = Math.floor(Math.random() * this.moves.length)
+        this.setMove(this.moves[randomIndex])
+    }
+    hasMove(){
+        if(this.move!=null){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    setScore(amount) {
+        if (isNaN(amount)) return console.error('NaN');;
+        if (amount <= 0) {
+            this.score = 0;
+        } else {
+            this.score = amount;
+        }
+    }
+    getScore() {
+        return this.score;
+    }
+    addPoint(){
+        this.score = this.score+1;
+    }
+    subtractPoint(){
+        if(this.score<=0)return;
+        this.score = this.score-1;
     }
 
 }

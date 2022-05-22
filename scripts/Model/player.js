@@ -1,20 +1,27 @@
 export default class Player {
     constructor(name='Unnamed Player') {
         this.name = name;
-    }
-    init() {
-        this.moves = ['rock', 'paper', 'scissor', 'lizard', 'spock']
         this.score = 0;
+        this.moves = ['rock', 'paper', 'scissor', 'lizard', 'spock'];
     }
+
     setMove(newMove) {
-        for (let move in this.moves) {
-            if (move === newMove) {
-                this.move = newMove;
-            }
-        }
+        // for (let move in this.moves) {
+        //     if (move === newMove) {
+        //         this.move = newMove;
+        //     }
+        // }
+        this.move = newMove;
     }
     getMove() {
         return this.move;
+    }
+    hasMove(){
+        if(this.move != null){
+            return true;
+        }else{
+            return false;
+        }
     }
     setScore(amount) {
         if (isNaN(amount)) return console.error('NaN');;
@@ -28,10 +35,11 @@ export default class Player {
         return this.score;
     }
     addPoint(){
-        this.score++;
+        this.score = this.score+1;
     }
     subtractPoint(){
-        this.score--;
+        if(this.score<=0)return;
+        this.score = this.score-1;
     }
 }
 

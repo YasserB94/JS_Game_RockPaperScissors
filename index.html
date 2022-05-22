@@ -16,16 +16,16 @@
     </header>
     <main>
         <div class="game-container">
-            <div class="main-menu">
+            <div class="main-menu" id="main-menu">
                 <button class="btn-main-menu" id="btn-single-player">single player</button>
                 <button class="btn-main-menu" id="btn-multi-player">multiplayer</button>
                 <button class="btn-main-menu" id="btn-rules">rules</button>
             </div>
 
-            <div class="single-player">
+            <div class="single-player" id="single-player-ui">
                 <div class="score-board">
                     <p>score</p>
-                    <p>0 | 0</p>
+                    <p id="sp-score-board">0 | 0</p>
                 </div>
                 <div class="arena-container">
                     <p>Arena</p>
@@ -33,12 +33,12 @@
                         <div class="chosen-move-player">
                             <p>Player</p>
                             <img src="./assets/rock-paper-scissors/moves/lizard.webp"
-                                alt="The selected handsign by the player">
+                                alt="The selected handsign by the player" id="sp-selected-move">
                         </div>
                         <div class="chosen-move-cpu">
                             <p>CPU</p>
                             <img src="./assets/rock-paper-scissors/moves/paper.webp"
-                                alt="The selected handsign by the computer">
+                                alt="The selected handsign by the computer" id="sp-selected-move-cpu">
                         </div>
                     </div>
                     <div class="round-result">
@@ -46,16 +46,16 @@
                         <p>Winner: <span>CPU</span> </p>
                     </div>
                 </div>
-                <button class="btn-arena-lockin">Lock in Choice</button>
+                <button class="btn-arena-lockin" id="sp-btn-lockin">Lock in Choice</button>
                 <div class="player-move-selector">
-                    <img src="./assets/rock-paper-scissors/moves/rock.webp" alt="handsign for rock">
-                    <img src="./assets/rock-paper-scissors/moves/paper.webp" alt="handsign for paper">
-                    <img src="./assets/rock-paper-scissors/moves/scissors.webp" alt="handsign for scissors">
-                    <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="handsign for lizard">
-                    <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="handsign for spock">
+                    <img src="./assets/rock-paper-scissors/moves/rock.webp" alt="handsign for rock" id="sp-move-rock">
+                    <img src="./assets/rock-paper-scissors/moves/paper.webp" alt="handsign for paper" id="sp-move-paper">
+                    <img src="./assets/rock-paper-scissors/moves/scissors.webp" alt="handsign for scissors" id="sp-move-scissor">
+                    <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="handsign for lizard" id="sp-move-lizard">
+                    <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="handsign for spock" id="sp-move-spock">
                 </div>
             </div>
-            <div class="multi-player">
+            <div class="multi-player" id="multi-player-ui">
                 <div class="score-board">
                     <p>Round 2/3</p>
                     <ul>
@@ -109,13 +109,13 @@
                     </table>
                 </div>
                 <div class="turn-indicator"><p>Turn: <span>Jefkeuh</span></p></div>
-                <button class="btn-arena-lockin">Lock in Choice</button>
+                <button class="btn-arena-lockin" id="mp-btn-lockin">Lock in Choice</button>
                 <div class="player-move-selector">
-                    <img src="./assets/rock-paper-scissors/moves/rock.webp" alt="handsign for rock">
-                    <img src="./assets/rock-paper-scissors/moves/paper.webp" alt="handsign for paper">
-                    <img src="./assets/rock-paper-scissors/moves/scissors.webp" alt="handsign for scissors">
-                    <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="handsign for lizard">
-                    <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="handsign for spock">
+                    <img src="./assets/rock-paper-scissors/moves/rock.webp" alt="handsign for rock" id="mp-move-rock">
+                    <img src="./assets/rock-paper-scissors/moves/paper.webp" alt="handsign for paper" id="mp-move-paper">
+                    <img src="./assets/rock-paper-scissors/moves/scissors.webp" alt="handsign for scissors" id="mp-move-scissor">
+                    <img src="./assets/rock-paper-scissors/moves/lizard.webp" alt="handsign for lizard" id="mp-move-lizard">
+                    <img src="./assets/rock-paper-scissors/moves/spock.webp" alt="handsign for spock" id="mp-move-spock">
                 </div>
             </div>
 

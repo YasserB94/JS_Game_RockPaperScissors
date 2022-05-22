@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 :root {
     /*Colors*/
     --clr-white: #FEFEFE;
@@ -16,7 +15,6 @@
     /*SIZING-*/
     --border-width: 0.25rem;
 }
-
 body {
     background-color: var(--clr-white);
     color: var(--clr-black);
@@ -30,7 +28,6 @@ body {
     justify-content: flex-start;
     flex-direction: column;
 }
-
 header {
     text-transform: uppercase;
     overflow: hidden;
@@ -38,13 +35,11 @@ header {
     text-align: center;
     padding-bottom: 1rem;
 }
-
 main {
     background-color: var(--clr-primary);
     width: 100vw;
     height: 100%;
 }
-
 .game-container {
     height: 100%;
     width: 100%;
@@ -57,14 +52,12 @@ main {
     border-width: var(--border-width);
     padding: 1rem;
 }
-
 /**GAME MAIN MENU**/
 .main-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .main-menu button {
     margin: 1rem;
     padding: .5rem 1.5rem;
@@ -76,24 +69,22 @@ main {
     background-color: var(--clr-white);
 
 }
-
 .main-menu button:active {
     background-color: var(--clr-primary);
     color: var(--clr-white) !important;
 }
-
 .main-menu button:hover {
     cursor: pointer;
     color: var(--clr-primary);
 }
 /**Game Styling**/
 .single-player{
+    display: none;
     border-style: solid;
     border-radius: .25rem;
     border-color: var(--clr-borders);
     max-height: 100%;
     max-width: 100%;
-    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -133,10 +124,12 @@ main {
     display: flex;
     justify-content: center;
     margin: .5rem;
+
 }
 .arena-container .chosen-move-panel img{
     width: 50%;
     aspect-ratio: 1/1;
+    filter: invert(30%);
 }
 .btn-arena-lockin{
     padding: 0.5rem 1rem;
@@ -157,12 +150,12 @@ main {
 }
 /*MultiPlayer*/
 .multi-player{
+    display: none;
     border-style: solid;
     border-radius: .25rem;
     border-color: var(--clr-borders);
     max-height: 100%;
     max-width: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
