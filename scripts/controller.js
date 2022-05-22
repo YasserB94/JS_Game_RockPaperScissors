@@ -10,7 +10,7 @@ export default class Controller {
         this.singleplayer = false;
         if (singleplayer) {
             this.singleplayer = true;
-            this.init(1, 1)
+            this.init(1, 3)
         } else {
             let amountOfPlayers, amountOfBots;
             while (amountOfPlayers === undefined || isNaN(amountOfPlayers)) {
@@ -43,8 +43,7 @@ export default class Controller {
         this.setControlElements();
     }
     update() {
-        console.log(this.bots);
-        console.log(this.players);
+        
     }
     draw() {
         this.drawSelectedMoveIndicator()

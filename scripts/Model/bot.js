@@ -43,10 +43,16 @@ export default class Bot {
     }
     addPoint(){
         this.score = this.score+1;
+        console.log(`Bot${this.name} Score ${this.score}`)
     }
     subtractPoint(){
         if(this.score<=0)return;
         this.score = this.score-1;
+        console.log(`Bot${this.name} Score ${this.score}`)
+
+    }
+    getName(){
+        return this.name;
     }
 
 }
